@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Stock Viewer</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="container">
+            <input id="input" type="text" value="Ticker" spellcheck="false">
+            <script type="text/javascript">
+                document.getElementById("input").addEventListener('click', function () {
+                    document.getElementById("input").value = "";
+                });
+                </script>
+
+            <p id="stock"></p>
+            <p id="arrow"></p>
+            <p id="percent"></p>
+            <p id="pastMonth"></p>
+            <p id="monthPercent"></p>
+
+            <canvas width="250" height="125" id="graph"></canvas>
+        </div>
+        <script src="main.js" async defer></script>
+    </body>
+</html>
